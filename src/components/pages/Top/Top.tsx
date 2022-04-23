@@ -24,7 +24,7 @@ export const Top = () => {
   const getWeather = (e: any) => {
     e.preventDefault();
     fetch(
-      "http://api.weatherapi.com/v1/current.json?key=f90c2b6ca2714b188c975827222304&q=London&aqi=no"
+      `http://api.weatherapi.com/v1/current.json?key=f90c2b6ca2714b188c975827222304&q=${city}&aqi=no`
     )
       .then((res) => res.json())
       .then((data) => {
