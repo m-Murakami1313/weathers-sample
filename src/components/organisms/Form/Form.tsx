@@ -1,8 +1,6 @@
-import { useState } from "react";
-
 type FormPropsType = {
   setCity: React.Dispatch<React.SetStateAction<string>>;
-  getWeather: (e: any) => void;
+  getWeather: (e: React.FormEvent<HTMLFormElement>) => void;
 };
 
 export const Form = (props: FormPropsType) => {
